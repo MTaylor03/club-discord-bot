@@ -5,7 +5,7 @@
 */
 
 // Expressing necessary modules
-require('dotenv').config;
+require('dotenv').config();
 const token = process.env.DISCORD_TOKEN;
 const express = require("express");
 const Discord = require("discord.js");
