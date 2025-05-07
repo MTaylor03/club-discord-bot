@@ -7,7 +7,7 @@ const faq = JSON.parse(
 module.exports = {
     name: "faq",
 
-    async execute(message) {
+    execute(message) {
         for(const i of faq.questions)
         {
             message.channel.send(`Q: ${i.question}`);
