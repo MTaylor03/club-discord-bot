@@ -1,3 +1,4 @@
+const { MessageFlags } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -7,6 +8,6 @@ module.exports = {
     name: "faq",
 
     async execute(message) {
-        message.channel.send(faq);
+        message.channel.reply({content: faq, flags: MessageFlags.Ephemeral});
     }
 }
